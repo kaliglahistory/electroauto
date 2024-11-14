@@ -11,10 +11,10 @@ namespace ScreenShotCapture
         {
             Console.WriteLine(
                 "Скриншот создан! Он в папке Debug или Release проекта или рядом с исполняемым файлом"
-          
+
              );
             //{
-                MakeScreenshot();
+            MakeScreenshot();
             //}
             Console.ReadLine();
         }
@@ -24,7 +24,7 @@ namespace ScreenShotCapture
         public static void MakeScreenshot()
         {
             DateTime localDate = DateTime.Now;
-            string data= localDate.ToString();
+            string data = localDate.ToString();
             // получаем размеры окна рабочего стола
             Rectangle bounds = Screen.GetBounds(Point.Empty);
 
